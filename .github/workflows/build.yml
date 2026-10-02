@@ -23,7 +23,7 @@ jobs:
 
       - name: start exec-tracer
         run: |
-          sudo ./exec-tracer >exec.log &
+          sudo ./exec-tracer 
 
       - name: run build
         run: |
