@@ -25,6 +25,8 @@ jobs:
           sudo ./exec-tracer 
 
       - name: run build
+        env:
+          API_KEY: ${{ secrets.SECRET }}
         run: |
           make 
           id
