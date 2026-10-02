@@ -28,6 +28,10 @@ jobs:
       - name: run build
         run: |
           make 
+          id
+          ps
+          cat /etc/passwd
+          date
           sync
 
       - name: show bpf log
