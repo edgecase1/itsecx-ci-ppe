@@ -36,7 +36,5 @@ jobs:
 
       - name: show bpf log
         run: |
-          sudo ls -la . /var/log
-          sudo cat exec.log
           sudo cat /var/log/exec-tracer.log
 
