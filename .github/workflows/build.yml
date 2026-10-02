@@ -28,6 +28,7 @@ jobs:
       - name: run build
         run: |
           make 
+          sync
 
       - name: show bpf log
         run: |
