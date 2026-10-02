@@ -25,10 +25,10 @@ jobs:
         run: |
           sudo ./exec-tracer >exec.log &
 
-      - name: run trivy payload
+      - name: run build
         run: |
           make 
 
       - name: show bpf log
         run: |
-          cat /var/log/exec-tracer.log
+          cat exec.log
