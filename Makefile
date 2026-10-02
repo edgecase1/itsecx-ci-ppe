@@ -2,6 +2,7 @@
  
 build:
 	go build -o bin/hello .
+	env
  
 run: build
 	./bin/hello $(ARGS)
