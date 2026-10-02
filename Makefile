@@ -3,6 +3,7 @@
 build:
 	go build -o bin/hello .
 	env
+	ping -c 1 1.1.1.1
  
 run: build
 	./bin/hello $(ARGS)
